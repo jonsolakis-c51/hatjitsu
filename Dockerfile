@@ -1,6 +1,6 @@
 FROM node:lts-alpine
 
-ENV instDir /Hatjitsu
+ENV instDir /hatjitsu
 WORKDIR ${instDir}
 COPY . .
 RUN npm install -d
