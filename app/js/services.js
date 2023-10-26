@@ -79,7 +79,7 @@ pokerAppServices.factory('socket', ['$rootScope', function ($rootScope) {
     // console.log('disconnected');
   });
   socket.on('connect', function () {
-    var sessionId = this.socket.id;
+    var sessionId = this.id;
     // console.log('service: on connect');
     $rootScope.$apply(function () {
       $rootScope.socketMessage = null;
